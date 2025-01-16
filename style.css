@@ -26,3 +26,27 @@ body {
   .icon {
     font-size: 4rem;
   }
+  /* Use the grid properties to layout the emoji cards */
+.html{
+    justify-content: center;
+}
+  .emojis{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    flex: 1;
+    max-width: 900px;
+    padding: 1rem;
+    
+  }
+  /* Use the flexbox properties to layout the content of the emoji cards */
+  .emoji{
+    display: flex;
+    flex-direction: column;
+  }
+  .emoji .icon {
+    order: -1;
+    align-self: center;
+    padding: 0.5rem;
+  }
