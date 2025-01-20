@@ -41,18 +41,18 @@ body {
   /* Use the flexbox properties to layout the content of the emoji cards */
   .emoji{
     display: flex;
-    flex-direction: column;  
-    justify-content: space-between;/* aligned with the bottom of the card */
-  
+    flex-direction: column;    
   }
-  .emoji p{
-    flex-grow: 1;
-  }
-
   .emoji .icon {
     order: -1;
     align-self: center;
     padding: 0.5rem;   
   } /* chang the order for emoji */
- 
+ .emoji a{
+  margin-top: auto;
+ }/* aligned with the bottom of the card */
+
+ /* Solution 2 for aligned with the bottom of the card 
+ .emoji {justfy-content: space-between;}
+ .emoji p { flex-grow: 1;} */
   
